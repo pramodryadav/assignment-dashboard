@@ -20,7 +20,7 @@ import BasicTable from '../components/Table';
 
 import RoundedBarChart from '../components/ApexBarChart';
 
-
+// repeated code section will can be remove using array map as done for sales array
 
 
 
