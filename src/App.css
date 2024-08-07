@@ -1,123 +1,129 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.dashboardLogo{
-    font-size:35px;color:#7293ff
+
+.dashboardLogo {
+    font-size: 35px;
+    color: #7293ff
 }
 
-.selectedMenu{
-    color:#7293ff
+.selectedMenu {
+    color: #7293ff
 }
 
-.activeLink{
+.activeLink {
     border-left-style: solid;
     border-left-color: #7293ff;
     border-left-width: 2px;
 }
 
-.toolbar{
-display: flex;
-justify-content: space-between;
-width: 100%;
-background-color:#202028
-
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #202028
 }
 
-.activity{
-    border:1px solid #dddddd67;
+.activity {
+    border: 1px solid #dddddd67;
     border-radius: 15px;
     background-color: #4c4d52;
-    color:#fff;
-    padding:3px 18px;
+    color: #fff;
+    padding: 3px 18px;
     text-transform: capitalize;
 }
 
 .total-orders-icon {
-    background-color: #242c56; /* Blue */
+    background-color: #242c56;
+    /* Blue */
 }
 
-.delivered-icon{
-    background-color:#175145
+.delivered-icon {
+    background-color: #175145
 }
-.cancelled{
+
+.cancelled {
     background-color: #5f3237;
 }
 
-.saleLogos{
-    
+.saleLogos {
+
     max-width: 55px;
     width: 100%;
     height: auto;
     padding: 7px;
     border-radius: 8px;
-   
+
 }
 
-.sales-below-section{
+.sales-below-section {
     display: flex;
     justify-content: space-between;
 }
 
-.downIcon{
-    color:#f25e5e;
+.downIcon {
+    color: #f25e5e;
     font-size: 35px;
 }
 
-.upIcon{
-    color:#2fd244;
+.upIcon {
+    color: #2fd244;
     font-size: 35px;
 }
 
-.sale-rec{
-    font-size:40px;font-weight:bold
+.sale-rec {
+    font-size: 40px;
+    font-weight: bold
 }
 
-.align-s-center{
+.align-s-center {
     align-self: center;
 }
 
-.labelText{
+.labelText {
     font-weight: bold;
     color: #cecfd1;
     font-size: .8rem;
 }
 
-.profit{
-    font-size:46px;font-weight:bold 
+.profit {
+    font-size: 46px;
+    font-weight: bold
 }
 
-.delivered{
-    background-color:#175145;
+.delivered {
+    background-color: #175145;
     color: #2fd244;
     padding: 4px 10px;
     border-radius: 15px;
 }
-.cancelledCell{
+
+.cancelledCell {
     background-color: #5f3237;
     padding: 4px 10px;
     border-radius: 15px;
-    color:#f25e5e
+    color: #f25e5e
 }
 
-.recenOrders{
+.recenOrders {
     font-weight: 600;
     font-size: 1.3rem;
-  
+
     color: #cecfd1;
 }
 
-.card{
+.card {
     border-radius: 6px;
     padding: 14px;
-    min-width: 200px; 
+    min-width: 200px;
     background-color: #202028;
-    
+
 
 }
 
-.foodLogos{
+.foodLogos {
     max-width: 70px;
     padding: 20px;
     border-radius: 50%;
@@ -125,91 +131,115 @@ background-color:#202028
     height: auto;
 }
 
-.cloche{
+.cloche {
     background-color: #214a60;
 }
 
-.target{
+.target {
     background-color: #5f3237;
-    
-    
+
+
 }
 
-.burger{
+.burger {
     background-color: #242c56;
-   
+
 }
 
-.dropDownIcon{
-    padding:3px;
+.dropDownIcon {
+    padding: 3px;
     font-size: 27px;
     background-color: #47484d;
     border-radius: 50%;
     align-self: center;
-   
+
 }
 
-.ratingIcon{
-    color:#faaf00
+.ratingIcon {
+    color: #faaf00
 }
 
-.feedback{
+.feedback {
     font-size: .7rem;
-    color:#c2c2c8
+    color: #c2c2c8
 }
 
 
-.label1{
+.label1 {
     font-weight: bold;
     color: #cecfd1;
     font-size: 1rem;
     align-self: center;
 }
 
-.userPic{
-    width:30px; 
-    height:30px;
+.userPic {
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #cecfd1;
     vertical-align: middle;
 }
 
-.userName{
+.userName {
     font-weight: bold;
     color: #fff;
     font-size: 1rem;
     align-self: center;
 }
 
-.toolbarRightChild{
+.toolbarRightChild {
     display: flex;
     justify-content: end;
     column-gap: 10px;
+    margin-left: 5px;
 }
 
-.toolbarIcon{
+.chartHeight {
+    height:205px
+}
+
+.toolbarIcon {
     background-color: #434449;
-    padding:7px;
+    padding: 7px;
     font-size: 41px;
     border-radius: 50%;
 }
 
+@media screen and (min-width:600px) {
+    .chartHeight{
+        height: 205px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .toolbarIcon {
+        display: none;
+    }
+    
+}
+
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-    height: 12px; /* Height of the horizontal scrollbar */
+    width: 12px;
+    /* Width of the scrollbar */
+    height: 12px;
+    /* Height of the horizontal scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent; /* Background of the track (scrollbar background) */
+    background: transparent;
+    /* Background of the track (scrollbar background) */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #555; /* Color of the scrollbar handle */
-    border-radius: 10px; /* Roundness of the scrollbar handle */
-    border: 3px solid #2d3748; /* Space around the scrollbar handle */
+    background-color: #555;
+    /* Color of the scrollbar handle */
+    border-radius: 10px;
+    /* Roundness of the scrollbar handle */
+    border: 3px solid #2d3748;
+    /* Space around the scrollbar handle */
 }
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

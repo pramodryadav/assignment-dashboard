@@ -97,7 +97,7 @@ const RoundedBarChart = () => (
         <Button className='activity' endIcon={<ArrowDropDownIcon/>}>weekly</Button>
         </Box>
         
-        <Chart options={options} series={series} type="bar" width="100%" height="240px" />
+        <Chart options={options} series={series} type="bar" width="100%" height="205px" />
     </Box>
 );
 
