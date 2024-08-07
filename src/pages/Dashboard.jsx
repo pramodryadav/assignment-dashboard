@@ -92,22 +92,21 @@ const Dashboard = () => {
       </Grid>
       <Grid item xs={12} lg={4}>
         <Box className="card" >
-          <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+          <Box sx={{ display: "flex", justifyContent: "space-between",flexWrap:"wrap" }}>
             <Box >
               <Typography className='labelText'>Net Profit</Typography>
               <Typography className='profit'>$6759.25k</Typography>
 
-
-              <Box sx={{ display: "flex" }}>
+              <Box sx={{ display: "flex",padding:"3px"}}>
                 <ArrowDropUpIcon className='align-s-center upIcon' />
                 <Typography sx={{ alignSelf: "center" }}>{3}%</Typography>
               </Box>
 
             </Box>
 
-            <Box sx={{ width: "50%", display: "flex", justifyContent: "center" }}>
+            <Box sx={{  display: "flex", justifyContent: "center" }}>
 
-              <div style={{ maxWidth: '120px', maxHeight: '120px', position: 'relative' }}>
+              <div style={{ maxWidth: '100px', maxHeight: '100px', position: 'relative' }}>
                 <CircularProgressbarWithChildren value={70}>
                   {/* Put any JSX content in here that you'd like. It'll be vertically and horizonally centered. */}
                   <strong>70%</strong>
@@ -130,7 +129,7 @@ const Dashboard = () => {
           </Box>
           <Box sx={{ display: "flex", justifyContent: "space-between" }}>
             <Box></Box>
-            <Box sx={{ display: "flex", justifyContent: "center", width: "50%" }}>
+            <Box sx={{ display: "flex", justifyContent: "end",}}>
               <Typography variant='caption' >*The value here has been rounded off</Typography>
             </Box>
 
